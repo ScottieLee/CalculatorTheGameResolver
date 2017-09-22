@@ -18,19 +18,22 @@ enum Operator {
     case flip
     case replace(replacer: Int, replacee: Int)
     case reverse
+    case sum
 }
 
 extension Operator {
     /*
-     Supported Operators:
-     +: +5
-     -: -3
-     *: *5
-     /: /2
-     <<: <<
-     |: |5
-     ^: ^
-     ~: ~
+     Supported Operators: e.g.
+     +:                     +5
+     -:                     -3
+     *:                     *5
+     /:                     /2
+     <<:                    <<
+     |:                     |5
+     ^:                     ^
+     ~:                     ~
+     =>:                    10=>0
+     ~<>:                   ^<>
      */
     init?(input: String) {
         // Parser
@@ -68,6 +71,8 @@ extension Operator {
         } else if input.range(of: "=>") != nil {
             let replacement = input.valuesWithInfixPattern(pattern: "=>")
             self = .replace(replacer: replacement.relacer, replacee: replacement.replacee)
+        } else if input.hasPrefix("<>") {
+            self = .sum
         } else {
             return nil
         }
@@ -93,6 +98,8 @@ extension Operator {
             return ~~lhs
         case .replace(let replacer, let replacee):
             return lhs ~=> (replacer, replacee)
+        case .sum:
+            return ~<>lhs
         }
     }
     var desc: String {
@@ -115,6 +122,8 @@ extension Operator {
             return "~"
         case .replace(let replacer, let replacee):
             return "\(replacee)=>\(replacer)"
+        case .sum:
+            return "<>"
         }
 
     }

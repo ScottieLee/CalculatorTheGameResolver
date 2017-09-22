@@ -23,8 +23,10 @@ prefix operator ~^
 prefix operator ~<<
 // reverse
 prefix operator ~~
-
+// replace
 infix operator ~=>
+// sum
+prefix operator ~<>
 
 func ~+(lhs: Int, rhs: Int) -> Int {
     return lhs + rhs
@@ -71,4 +73,13 @@ func ~=>(lhs: Int, rhs: Repacement) -> Int? {
     let valueStr = String(lhs)
     let resultStr = valueStr.replacingOccurrences(of: relaceeStr, with: relacerStr)
     return Int(resultStr)
+}
+
+prefix func ~<>(rhs: Int) -> Int {
+    let rhsString = String(rhs)
+    let negative = rhsString.hasPrefix("-")
+    let rhsStringAbs = negative ? rhsString.replacingOccurrences(of: "-", with: "") : rhsString
+    return Int(rhsStringAbs.characters.reduce(0) { (sum, cur) -> Int in
+        return sum + Int(String(cur))!
+    }) * (negative ? (-1) : 1)
 }
