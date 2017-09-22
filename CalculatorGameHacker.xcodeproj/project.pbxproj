@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D22EDBC31F73F67C00BEDFF1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDBC21F73F67C00BEDFF1 /* main.swift */; };
+		D22EDBCA1F73F6EC00BEDFF1 /* BackendOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDBC91F73F6EC00BEDFF1 /* BackendOperators.swift */; };
+		D22EDBCC1F73FBDC00BEDFF1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDBCB1F73FBDC00BEDFF1 /* Value.swift */; };
+		D22EDBD51F740ADA00BEDFF1 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDBD41F740ADA00BEDFF1 /* Operator.swift */; };
+		D2B915421F753689009DD4E2 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B915411F753689009DD4E2 /* ConsoleIO.swift */; };
+		D2B915441F75372F009DD4E2 /* CommandLineTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B915431F75372F009DD4E2 /* CommandLineTool.swift */; };
+		D2EDBE101F74172C00B94747 /* ExhaustiveResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EDBE0F1F74172C00B94747 /* ExhaustiveResolver.swift */; };
+		D2EDBE121F74173B00B94747 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EDBE111F74173B00B94747 /* Resolver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D22EDBBD1F73F67C00BEDFF1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D22EDBBF1F73F67C00BEDFF1 /* CalculatorGameHacker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CalculatorGameHacker; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22EDBC21F73F67C00BEDFF1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D22EDBC91F73F6EC00BEDFF1 /* BackendOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendOperators.swift; sourceTree = "<group>"; };
+		D22EDBCB1F73FBDC00BEDFF1 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		D22EDBD41F740ADA00BEDFF1 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		D2B915411F753689009DD4E2 /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		D2B915431F75372F009DD4E2 /* CommandLineTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineTool.swift; sourceTree = "<group>"; };
+		D2EDBE0F1F74172C00B94747 /* ExhaustiveResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveResolver.swift; sourceTree = "<group>"; };
+		D2EDBE111F74173B00B94747 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D22EDBBC1F73F67C00BEDFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D22EDBB61F73F67C00BEDFF1 = {
+			isa = PBXGroup;
+			children = (
+				D22EDBC11F73F67C00BEDFF1 /* CalculatorGameHacker */,
+				D22EDBC01F73F67C00BEDFF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D22EDBC01F73F67C00BEDFF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D22EDBBF1F73F67C00BEDFF1 /* CalculatorGameHacker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D22EDBC11F73F67C00BEDFF1 /* CalculatorGameHacker */ = {
+			isa = PBXGroup;
+			children = (
+				D22EDBC21F73F67C00BEDFF1 /* main.swift */,
+				D22EDBC91F73F6EC00BEDFF1 /* BackendOperators.swift */,
+				D22EDBCB1F73FBDC00BEDFF1 /* Value.swift */,
+				D22EDBD41F740ADA00BEDFF1 /* Operator.swift */,
+				D2EDBE0F1F74172C00B94747 /* ExhaustiveResolver.swift */,
+				D2EDBE111F74173B00B94747 /* Resolver.swift */,
+				D2B915411F753689009DD4E2 /* ConsoleIO.swift */,
+				D2B915431F75372F009DD4E2 /* CommandLineTool.swift */,
+			);
+			path = CalculatorGameHacker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D22EDBBE1F73F67C00BEDFF1 /* CalculatorGameHacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22EDBC61F73F67C00BEDFF1 /* Build configuration list for PBXNativeTarget "CalculatorGameHacker" */;
+			buildPhases = (
+				D22EDBBB1F73F67C00BEDFF1 /* Sources */,
+				D22EDBBC1F73F67C00BEDFF1 /* Frameworks */,
+				D22EDBBD1F73F67C00BEDFF1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculatorGameHacker;
+			productName = CalculatorGameHacker;
+			productReference = D22EDBBF1F73F67C00BEDFF1 /* CalculatorGameHacker */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D22EDBB71F73F67C00BEDFF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = ScottLi;
+				TargetAttributes = {
+					D22EDBBE1F73F67C00BEDFF1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D22EDBBA1F73F67C00BEDFF1 /* Build configuration list for PBXProject "CalculatorGameHacker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D22EDBB61F73F67C00BEDFF1;
+			productRefGroup = D22EDBC01F73F67C00BEDFF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D22EDBBE1F73F67C00BEDFF1 /* CalculatorGameHacker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D22EDBBB1F73F67C00BEDFF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22EDBC31F73F67C00BEDFF1 /* main.swift in Sources */,
+				D2B915421F753689009DD4E2 /* ConsoleIO.swift in Sources */,
+				D22EDBCA1F73F6EC00BEDFF1 /* BackendOperators.swift in Sources */,
+				D22EDBD51F740ADA00BEDFF1 /* Operator.swift in Sources */,
+				D2EDBE101F74172C00B94747 /* ExhaustiveResolver.swift in Sources */,
+				D2B915441F75372F009DD4E2 /* CommandLineTool.swift in Sources */,
+				D22EDBCC1F73FBDC00BEDFF1 /* Value.swift in Sources */,
+				D2EDBE121F74173B00B94747 /* Resolver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D22EDBC41F73F67C00BEDFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D22EDBC51F73F67C00BEDFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D22EDBC71F73F67C00BEDFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT7SS359JK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D22EDBC81F73F67C00BEDFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT7SS359JK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D22EDBBA1F73F67C00BEDFF1 /* Build configuration list for PBXProject "CalculatorGameHacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22EDBC41F73F67C00BEDFF1 /* Debug */,
+				D22EDBC51F73F67C00BEDFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D22EDBC61F73F67C00BEDFF1 /* Build configuration list for PBXNativeTarget "CalculatorGameHacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22EDBC71F73F67C00BEDFF1 /* Debug */,
+				D22EDBC81F73F67C00BEDFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D22EDBB71F73F67C00BEDFF1 /* Project object */;
+}
