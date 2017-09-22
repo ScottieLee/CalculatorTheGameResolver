@@ -66,7 +66,8 @@ extension Operator {
         } else if input.hasPrefix("~") {
             self = .reverse
         } else if input.range(of: "=>") != nil {
-            fatalError("To implement")
+            let replacement = input.valuesWithInfixPattern(pattern: "=>")
+            self = .replace(replacer: replacement.relacer, replacee: replacement.replacee)
         } else {
             return nil
         }
@@ -91,7 +92,7 @@ extension Operator {
         case .reverse:
             return ~~lhs
         case .replace(let replacer, let replacee):
-            fatalError("Not implemented")
+            return lhs ~=> (replacer, replacee)
         }
     }
     var desc: String {
@@ -113,14 +114,14 @@ extension Operator {
         case .reverse:
             return "~"
         case .replace(let replacer, let replacee):
-            fatalError("Not implemented")
+            return "\(replacee)=>\(replacer)"
         }
 
     }
 }
 
 extension String {
-    fileprivate func rhsValueWithPattern(pattern: String) -> Int? {
+    func rhsValueWithPattern(pattern: String) -> Int? {
         let rhsString = replacingOccurrences(of: pattern, with: "")
         let rhsVal = Int(rhsString)
         guard let rhsValUnwrapped = rhsVal else {
@@ -128,5 +129,13 @@ extension String {
         }
         return rhsValUnwrapped
     }
+    
+    func valuesWithInfixPattern(pattern: String) -> Repacement {
+        let range = self.range(of: pattern)!
+        let lhsStr = self.prefix(upTo:range.lowerBound)
+        let rhsStr = self.suffix(from:range.upperBound)
+        return (Int(rhsStr)!, Int(lhsStr)!)
+    }
 }
+
 

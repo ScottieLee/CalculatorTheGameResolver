@@ -24,6 +24,8 @@ prefix operator ~<<
 // reverse
 prefix operator ~~
 
+infix operator ~=>
+
 func ~+(lhs: Int, rhs: Int) -> Int {
     return lhs + rhs
 }
@@ -36,7 +38,10 @@ func ~*(lhs: Int, rhs: Int) -> Int {
     return lhs * rhs
 }
 
-func ~/(lhs: Int, rhs: Int) -> Int {
+func ~/(lhs: Int, rhs: Int) -> Int? {
+    if lhs % rhs != 0 {
+        return nil
+    }
     return lhs / rhs
 }
 
@@ -56,4 +61,14 @@ prefix func ~<<(lhs: Int) -> Int {
 prefix func ~~(lhs: Int) -> Int? {
     let reversed = String(String(lhs).reversed())
     return Int(reversed)
+}
+
+typealias Repacement = (relacer: Int, replacee: Int)
+
+func ~=>(lhs: Int, rhs: Repacement) -> Int? {
+    let relacerStr = String(rhs.relacer)
+    let relaceeStr = String(rhs.replacee)
+    let valueStr = String(lhs)
+    let resultStr = valueStr.replacingOccurrences(of: relaceeStr, with: relacerStr)
+    return Int(resultStr)
 }

@@ -33,7 +33,7 @@ class ExhaustiveResolver: Resolver {
             }
             next()
             if isStepEnd {
-                fatalError("Calculation Error")
+                return ["There is no answer"]
             }
             (success, operationString) = runOperatorChain()
         }
